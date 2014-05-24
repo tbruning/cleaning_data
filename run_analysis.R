@@ -49,4 +49,4 @@ meanData$Activity[2] <- "Laying - Mean"
 meanData$Activity[3] <- "Sitting - Mean"
 meanData$Activity[4] <- "Standing - Mean"
 meanData$Activity[5] <- "UpStairs - Mean"
-write.csv(comb.df1, file = "tidydata.csv", row.names = FALSE)
+write.table(comb.df1, file = "tidyMean.txt", row.names = FALSE)
