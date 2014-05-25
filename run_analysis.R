@@ -5,7 +5,7 @@
 ## variables (columns), and observations (rows).
 ## This data set is used as input to the second R program
 ## (tidyMean).
-
+library(reshape)
 ## Read in Data
 yTrain <- read.table("y_train.txt", header = FALSE)
 xTrain <- read.table("x_train.txt", header = FALSE)
@@ -24,6 +24,12 @@ comb.df <- do.call(rbind, list(test.df, train.df))
 
 ## Clean up column headers
 features$V2 <- gsub("\\(\\)","",features$V2)
+features$V2 <- tolower(features$V2)
+features$V2 <- gsub("\\-m","M",features$V2)
+features$V2 <- gsub("\\-s","S",features$V2)
+
+
+## Alter column numbers to allow for new column (Activities)        
 features$V1 <- features$V1 +1
 
 ##Select appropriate columns
@@ -40,13 +46,9 @@ comb.df1$V1 <- gsub("6","Laying", comb.df1$V1)
 ## Add Column Names to data set
 colnames(comb.df1) <- features$V2
 ## create tidy data set of summary data
-comb.df1 <- cast(melt(inputData),Activity ~ variable, mean)
 
+meanData <- cast(melt(comb.df1),activity ~ variable, mean)
 ## Clean up Labels (So viewers will know it is summary data)
-meanData$Activity <- meanData$Activity + " (Mean)"
-meanData$Activity[1] <- "DownStairs - Mean"
-meanData$Activity[2] <- "Laying - Mean"
-meanData$Activity[3] <- "Sitting - Mean"
-meanData$Activity[4] <- "Standing - Mean"
-meanData$Activity[5] <- "UpStairs - Mean"
-write.table(comb.df1, file = "tidyMean.txt", row.names = FALSE)
+
+write.table(meanData, file = "tidyMean.txt", rownames= FALSE)
+
