@@ -6,7 +6,7 @@ The code is well documented and since it is subject to change without this docum
 updated, this is an overview of the process. Please see the code for detailed documentation
 on what is going on there.
 
-Files
+##Files
 * Input
 Datasets obtained from the course project instruction  page delivered in a .zip file.
   *y_train.txt: Dataset which details the training activities
@@ -21,5 +21,5 @@ Datasets obtained from the course project instruction  page delivered in a .zip 
   * tidyMean.txt: Dataset of the average measurements of the data, by Activity, for each
   variable
   
- ##Process
+##Process
  
