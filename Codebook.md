@@ -26,6 +26,7 @@ data set.  Looking at the variable names I chose those variables that had a name
 or *std().  These, it seemed to me, to be derived mean and standard deviation numbers.  These are the columns in the data set I extracted for further analysis.  I used notepad++ in Windows to review the features.txt file and subsetted the chosen variables into the derived file features.short.txt.  I used both columns (column number and variable name) in this new file. I then edited out the `(` and `)` from the name to clean it up.
 
 The steps taken to complete the project were:
+
 1. Read in files
 
 2. Combine activity files with results files using `cbind`
