@@ -27,12 +27,22 @@ or *std().  These, it seemed to me, to be derived mean and standard deviation nu
 
 The steps taken to complete the project were:
 1. Read in files
+
 2. Combine activity files with results files using `cbind`
+
 3. Merge the two combined files using `rbind`
+
 4. Clean up the variable headers
+
+
 5. Select the appropriate variables into new dataframe.
+
 6. Expand the activity descriptions from 1:6 to Walking, Walking Upstairs, Walking Downstairs, Standing, Sitting and Laying.
+
 7. Add the modified column names to the data set
+
 8. Create the tidy dataset of the averages of the variables by Activity
+
 9. Clean up the Activity names by adding `-Mean` to each so a casual viewer will known that it is derived data, not the sourse data
+
 10. Output the dataset to tidyMean.txt
