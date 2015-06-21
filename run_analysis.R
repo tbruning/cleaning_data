@@ -43,7 +43,7 @@ comb.df1$V1 <- gsub("4","Sitting", comb.df1$V1)
 comb.df1$V1 <- gsub("5","Standing", comb.df1$V1)
 comb.df1$V1 <- gsub("6","Laying", comb.df1$V1)
 
-## Add Column Names to data set
+## Add Column Names to data set  
 colnames(comb.df1) <- features$V2
 ## create tidy data set of summary data
 

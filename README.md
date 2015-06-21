@@ -13,7 +13,7 @@ Datasets obtained from the course project instruction page delivered in a .zip f
  - **features.txt:** Column number and column header of the x_test and x_train datasets
 
 ###Derived
- - **features.short.txt:** Data set of the column numbers and column headers of the subset of variables used to construct the the tidyMean dataset, edited from features.txt
+ - **features.short.txt:** Data set of the column numbers and column headers of the subset of variables used to construct the the tidyMean dataset, edited from features.txt  
 
 ###Output
   - **tidyMean.txt:** Dataset of the average measurements of the data, by Activity, for each variable

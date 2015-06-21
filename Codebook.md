@@ -12,4 +12,4 @@ The Activities are:
 - **Laying - Mean** - value of the mean of all activities where the activity is laying.
 
 
-I thought it necessary to add the `- Mean` to each to let the casual reader of the data know it is derived data, not the source data
+I thought it necessary to add the `- Mean` to each to let the casual reader of the data know it is derived data, not the source data.
